@@ -63,6 +63,8 @@ import { createGalaxy } from './galaxy';
 import { createVoronoi } from './voronoi';
 import { createSmoke } from './smoke';
 import { createHamlet } from './hamlet';
+import { createGradientClock } from './gradient-clock';
+import { createRPlace } from './rplace';
 
 export const screensaverFactories: ScreensaverFactory[] = [
   createBlackScreen,
@@ -135,4 +137,6 @@ export const screensaverFactories: ScreensaverFactory[] = [
   createVoronoi,
   createSmoke,
   createHamlet,
+  createGradientClock,
+  createRPlace,
 ];

@@ -1,6 +1,6 @@
 name,author,license,url
 Slots,Harrison Page,MIT,
-BoneQuest,root@bonequest.com,,
+Chrona,tpatel12,,https://github.com/tidbyt/community/tree/main/apps/gradientclock2 
 Defrag,Harrison Page,MIT,
 Driver,Martijn Steinrucken (BigWings),CC BY-NC-SA 3.0,https://www.shadertoy.com/view/MdfBRX
 Epoch,Harrison Page,MIT,
@@ -27,3 +27,4 @@ Smoke,ehj1,,https://www.shadertoy.com/view/4tSGRz
 Rorschach,David Gallardo (xjorma),CC BY-NC-SA 3.0,
 Spiral,HaleyHalcyon,,https://www.shadertoy.com/view/3ttXWX
 Swirl,borisvanschooten (based on Darwin226),,https://www.shadertoy.com/view/4dX3Rf
+R-Place,funkfinger,,https://github.com/funkfinger/tidbyt-r-place-tile/blob/main/r-place-tile.star

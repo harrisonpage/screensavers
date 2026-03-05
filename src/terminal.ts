@@ -134,6 +134,11 @@ export function createTerminalUI(
     creditsLink.href = 'credits.html';
     creditsLink.textContent = 'CREDITS';
     footer.appendChild(creditsLink);
+    
+    const githubLink = document.createElement('a');
+    githubLink.href = 'https://github.com/harrisonpage/screensavers';
+    githubLink.textContent = 'GITHUB';
+    footer.appendChild(githubLink);
 
     const shuffleLink = document.createElement('a');
     shuffleLink.href = '#';
@@ -224,6 +229,9 @@ export function createTerminalUI(
   document.addEventListener('click', onClick);
   window.addEventListener('resize', onResize);
 
+  // Always render the menu so it's ready when the user dismisses a screensaver
+  render();
+
   // Auto-launch from URL path (e.g. /s/starfield) or legacy query param (?saver=starfield)
   const pathMatch = window.location.pathname.match(/^\/s\/(.+)$/);
   const saverParam = pathMatch ? pathMatch[1] : new URLSearchParams(window.location.search).get('saver');
@@ -238,6 +246,4 @@ export function createTerminalUI(
       return;
     }
   }
-
-  render();
 }
