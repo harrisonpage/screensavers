@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Screensavers TV</title>
+  <meta property="og:title" content="Screensavers TV" />
+  <meta property="og:description" content="A collection of web-based screensavers" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://screensavers.tv/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    #terminal {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem 0.75rem;
+    }
+
+    .page-header {
+      margin-bottom: 0.75rem;
+      padding: 0 0.5rem;
+    }
+
+    .page-header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .page-header p {
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    .saver-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .saver-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.12s;
+      color: #333;
+      font-size: 2rem;
+    }
+
+    .saver-item:hover {
+      background: #f0f0f0;
+    }
+
+    .saver-item:active {
+      background: #e4e4e4;
+    }
+
+    .saver-item .arrow {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .saver-item:hover .arrow {
+      color: #999;
+    }
+
+    .page-footer {
+      margin-top: 1.5rem;
+      padding: 0.75rem 0.5rem 0;
+      border-top: 1px solid #eee;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 1rem;
+    }
+
+    .page-footer a {
+      color: #999;
+      text-decoration: none;
+    }
+
+    .page-footer a:hover {
+      color: #333;
+    }
+
+    .page-footer .hint {
+      color: #ccc;
+      flex-basis: 100%;
+    }
+
+    @media (max-width: 480px) {
+      #terminal {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+
+    /* Touch devices: larger tap targets */
+    @media (pointer: coarse) {
+      .saver-item {
+        min-height: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
