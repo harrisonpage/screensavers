@@ -39,7 +39,8 @@ import { createUlam } from './ulam';
 import { createPewPew } from './pewpew';
 import { createCoral } from './coral';
 import { createTestPattern } from './test';
-import { createFern, createSierpinski, createMaple, createDragon, createKoch, createPentaflake, createCrystal } from './ifs';
+import { createFern, createSierpinski, createMaple, createDragon, createPentaflake, createCrystal } from './ifs';
+import { createKoch } from './koch';
 import { createSwirl } from './swirl';
 import { createSpiral } from './spiral';
 import { createEscher } from './escher';
@@ -65,6 +66,9 @@ import { createSmoke } from './smoke';
 import { createHamlet } from './hamlet';
 import { createGradientClock } from './gradient-clock';
 import { createRPlace } from './rplace';
+import { createDiscoSun } from './discosun';
+import { createSurface } from './surface';
+import { createBokeh } from './bokeh';
 
 export const screensaverFactories: ScreensaverFactory[] = [
   createBlackScreen,
@@ -139,4 +143,7 @@ export const screensaverFactories: ScreensaverFactory[] = [
   createHamlet,
   createGradientClock,
   createRPlace,
+  createDiscoSun,
+  createSurface,
+  createBokeh,
 ];

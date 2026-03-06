@@ -140,6 +140,11 @@ export function createTerminalUI(
     githubLink.textContent = 'GITHUB';
     footer.appendChild(githubLink);
 
+    const rssLink = document.createElement('a');
+    rssLink.href = '/changes.xml';
+    rssLink.textContent = 'RSS';
+    footer.appendChild(rssLink);
+
     const shuffleLink = document.createElement('a');
     shuffleLink.href = '#';
     shuffleLink.textContent = 'SHUFFLE';

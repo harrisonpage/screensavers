@@ -126,20 +126,6 @@ const DRAGON: IFSPreset = {
   palette: 4,
 };
 
-const KOCH: IFSPreset = {
-  name: 'Koch',
-  description: 'Koch snowflake fractal',
-  transforms: [
-    { a: 0.333, b: 0, c: 0, d: 0.333, e: 0, f: 0, p: 0.2, color: 0.1 },
-    { a: 0.333, b: 0, c: 0, d: 0.333, e: 0.667, f: 0, p: 0.2, color: 0.3 },
-    { a: 0.333, b: 0, c: 0, d: 0.333, e: 0.333, f: 0.577, p: 0.2, color: 0.5 },
-    { a: 0.167, b: -0.289, c: 0.289, d: 0.167, e: 0.333, f: 0, p: 0.2, color: 0.7 },
-    { a: 0.167, b: 0.289, c: -0.289, d: 0.167, e: 0.5, f: 0.289, p: 0.2, color: 0.9 },
-  ],
-  xMin: -0.1, xMax: 1.1, yMin: -0.2, yMax: 0.8,
-  palette: 2,
-};
-
 const PENTAFLAKE: IFSPreset = {
   name: 'Pentaflake',
   description: 'Pentagonal fractal',
@@ -471,6 +457,5 @@ export function createFern(): Screensaver { return createIfsScreensaver(FERN); }
 export function createSierpinski(): Screensaver { return createIfsScreensaver(SIERPINSKI); }
 export function createMaple(): Screensaver { return createIfsScreensaver(MAPLE); }
 export function createDragon(): Screensaver { return createIfsScreensaver(DRAGON); }
-export function createKoch(): Screensaver { return createIfsScreensaver(KOCH); }
 export function createPentaflake(): Screensaver { return createIfsScreensaver(PENTAFLAKE); }
 export function createCrystal(): Screensaver { return createIfsScreensaver(CRYSTAL); }
