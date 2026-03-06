@@ -1,8 +1,8 @@
 import type { Screensaver } from '../types';
 
 const IMAGES = [
-  { src: 'assets/rplace/rzUhL4w.png', width: 2000, height: 2000 },
-  { src: 'assets/rplace/2yz7Go2.png', width: 1000, height: 1000 },
+  { src: '/assets/rplace/rzUhL4w.png', width: 2000, height: 2000 },
+  { src: '/assets/rplace/2yz7Go2.png', width: 1000, height: 1000 },
 ];
 
 const PAN_DURATION = 20000; // ms for one pan segment
@@ -74,7 +74,7 @@ export function createRPlace(): Screensaver {
   }
 
   function draw(now: number) {
-    if (!ctx || !img) {
+    if (!ctx || !img || !img.complete || !img.naturalWidth) {
       animationFrame = requestAnimationFrame(draw);
       return;
     }
@@ -110,7 +110,7 @@ export function createRPlace(): Screensaver {
   }
 
   return {
-    name: 'R/Place',
+    name: 'R-Place',
     description: 'Panning across the r/place canvas',
 
     init(c: HTMLCanvasElement) {

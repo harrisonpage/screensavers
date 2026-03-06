@@ -1,7 +1,7 @@
 import type { Screensaver } from '../types';
 
-const TOASTER_SPRITE = 'assets/toast/toaster.gif';
-const TOAST_SPRITE = 'assets/toast/toast.gif';
+const TOASTER_SPRITE = '/assets/toast/toaster.gif';
+const TOAST_SPRITE = '/assets/toast/toast.gif';
 
 // sprite sheet: 256x64, 4 frames of 64x64
 const FRAME_SIZE = 64;
